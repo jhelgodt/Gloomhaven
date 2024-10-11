@@ -12,8 +12,13 @@
     <header class="hero">
       <div class="hero-content">
         <h1>Gloomhaven: Jaws of the Lion</h1>
-        <p>Upptäck ett episkt brädspel fyllt med äventyr och strategi!</p>
-        <button class="cta-button">Läs mer</button>
+        <p>Kom in i rätt stämning för att spela Gloomhaven!</p>
+        <button
+          class="cta-button"
+          onclick="scrollToSection('spotify-playlist')"
+        >
+          Gå till spellistan
+        </button>
       </div>
       <div class="hero-image">
         <img
@@ -22,6 +27,21 @@
         />
       </div>
     </header>
+    <!-- Sektion för Spotify-spellistan -->
+    <section id="spotify-playlist" class="spotify-playlist">
+      <h2>Kom i stämning för Gloomhaven</h2>
+      <p>Starta spelkvällen med den här spellistan direkt från Spotify:</p>
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/playlist/5re3wD3gQD2LVuGO0dWhas?utm_source=generator"
+        width="60%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </section>
 
     <!-- Sektionen om spelet -->
     <section class="game-info">
@@ -36,8 +56,6 @@
 
     <!-- Karaktär-sektionerna: En sektion för varje karaktär med beskrivning och bild -->
     <section class="characters">
-      <h2>Karaktärer i spelet</h2>
-
       <div class="character">
         <img
           src="https://theboardgameschronicle.com/wp-content/uploads/2020/07/rg_1.png"
@@ -92,7 +110,10 @@
     <!-- Sektion för video och andra medier -->
     <section class="media-section">
       <h2>Spela Gloomhaven</h2>
-      <p>Vill du veta mer om hur spelet går till? Kolla in videon nedan:</p>
+      <p>
+        Vill du veta mer om hur spelet går till? Kolla in videon nedan för en
+        snabb översikt och lär dig hur du kan börja spela!
+      </p>
       <div class="video-container">
         <iframe
           width="560"
@@ -105,27 +126,5 @@
         ></iframe>
       </div>
     </section>
-
-    <!-- Sektion för att lägga till Spotify-spellista -->
-    <section class="spotify-playlist">
-      <h2>Spellista för spelkvällen</h2>
-      <!-- Lägg till din Spotify-spellista här -->
-      <p>Lägg till din favoritmusik för den perfekta spelkvällen!</p>
-      <iframe
-        src="https://open.spotify.com/embed/playlist/your-playlist-id"
-        width="300"
-        height="380"
-        frameborder="0"
-        allowtransparency="true"
-        allow="encrypted-media"
-      ></iframe>
-    </section>
-
-    <!-- Footer med avslutande meddelande -->
-    <footer>
-      <p>
-        Tack för att du besöker min hobbysida om Gloomhaven: Jaws of the Lion!
-      </p>
-    </footer>
   </body>
 </html>

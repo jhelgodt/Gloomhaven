@@ -4,14 +4,14 @@ html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   color: #333;
 }
 
 h1,
 h2,
 h3 {
-  color: #2c3e50;
+  color: #ffffff;
 }
 
 p {
@@ -24,7 +24,7 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #34495e;
+  background-color: rgb(199, 66, 53); /* Använder Gloomhaven-färgen */
   color: white;
   padding: 50px;
   flex-wrap: wrap;
@@ -45,16 +45,18 @@ p {
 
 .cta-button {
   padding: 10px 20px;
-  background-color: #e74c3c;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(199, 66, 53);
   border: none;
   cursor: pointer;
   margin-top: 15px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
 }
 
 .cta-button:hover {
-  background-color: #c0392b;
+  background-color: rgb(255, 255, 255);
+  color: rgb(150, 40, 30);
 }
 
 .hero-image img {
@@ -62,13 +64,25 @@ p {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 /* Sektionen om spelet */
+/* Sektionen om spelet */
 .game-info {
   padding: 40px 20px;
-  background-color: #ecf0f1;
+  background-color: rgb(84, 78, 62); /* Ny färg */
+  color: white; /* Textfärg för bättre kontrast */
   text-align: center;
+}
+
+.game-info h2 {
+  color: #ffffff; /* Vit färg för rubriken */
+  margin-bottom: 20px;
+}
+
+.game-info p {
+  color: #f0f0f0; /* Lite ljusare färg för paragraftext för läsbarhet */
 }
 
 /* Karaktär-sektionen */
@@ -102,16 +116,49 @@ p {
   margin-bottom: 15px;
 }
 
-.character-info h3 {
-  margin: 0 0 10px 0;
+/* Spotify-sektion */
+.spotify-playlist,
+.media-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
 }
 
-/* Video och media-sektionen */
-.media-section,
-.spotify-playlist {
+.spotify-playlist h2 {
+  color: rgb(199, 66, 53); /* Gloomhaven-färgen */
+}
+
+.media-section {
   padding: 40px 20px;
-  background-color: #fff;
-  text-align: center;
+  background-color: #f8f9fa; /* Ljus bakgrundsfärg för kontrast */
+  text-align: center; /* Centrera texten */
+  border-radius: 10px; /* Rundade hörn för sektionen */
+  margin: 20px 0; /* Utrymme mellan sektioner */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lätt skugga för djup */
+}
+
+.media-section h2 {
+  color: rgb(199, 66, 53); /* Gloomhaven-färgen */
+  margin-bottom: 10px; /* Utrymme under rubriken */
+  font-size: 2rem; /* Större rubrik */
+}
+
+.media-section p {
+  color: #333; /* Mörkare text för läsbarhet */
+  font-size: 1.1rem; /* Lätt större text */
+  margin-bottom: 20px; /* Utrymme under texten */
+}
+
+.video-container {
+  display: flex;
+  justify-content: center; /* Centrera videon */
+}
+
+@media (max-width: 900px) {
+  .video-container iframe {
+    width: 100%; /* Gör videon responsiv */
+    height: auto; /* Justera höjden automatiskt */
+  }
 }
 
 .video-container,
@@ -119,7 +166,6 @@ iframe {
   max-width: 100%;
   margin: 20px auto;
 }
-
 /* Footer */
 footer {
   background-color: #2c3e50;
@@ -127,7 +173,15 @@ footer {
   text-align: center;
   padding: 15px 0;
 }
+
 @media (max-width: 900px) {
+  section {
+    margin: 0.5em;
+  }
+
+  iframe {
+    width: 100%;
+  }
   .hero {
     flex-direction: column;
     text-align: center;
