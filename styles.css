@@ -9,11 +9,12 @@ html {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   color: #ffffff;
 }
-
+h3 {
+  color: #746868;
+}
 p {
   line-height: 1.6;
 }
@@ -68,7 +69,7 @@ p {
 }
 
 /* Sektionen om spelet */
-/* Sektionen om spelet */
+
 .game-info {
   padding: 40px 20px;
   background-color: rgb(84, 78, 62); /* Ny färg */
